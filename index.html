@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Front-end Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Front-end Developer</h1>
+            <p>Transformando ideias em experiências digitais excepcionais. Especialista em criar interfaces modernas, responsivas e de alta performance com as tecnologias mais recentes do mercado.</p>
+            <a href="#contact" class="cta-button">Agendar uma reunião</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Projetos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>E-commerce Platform</h3>
+                <p>Desenvolvimento completo de uma plataforma de e-commerce com foco em performance e experiência do usuário. Implementação de carrinho de compras, sistema de pagamento e área do cliente.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Tailwind</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Dashboard Analytics</h3>
+                <p>Dashboard interativo para visualização de dados em tempo real, com gráficos dinâmicos e filtros avançados. Integração com diversas APIs e otimização de performance.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">D3.js</span>
+                    <span class="tech-tag">TypeScript</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Streaming App</h3>
+                <p>Aplicação de streaming de vídeo com interface moderna e responsiva. Implementação de player customizado e sistema de recomendação.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Redux</span>
+                    <span class="tech-tag">Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Front-end Development</h3>
+                <p>Especialista em React, Vue.js e Angular. Foco em criar interfaces responsivas e acessíveis com as melhores práticas de desenvolvimento.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>Experiência em design de interfaces com foco em usabilidade e experiência do usuário. Conhecimento em Figma e Adobe XD.</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Performance & SEO</h3>
+                <p>Otimização de performance web e SEO técnico. Experiência com ferramentas de análise e melhoria de performance.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Adicione esta seção de contato antes do footer -->
+<section id="contact" class="section contact-section reveal">
+    <h2 class="section-title">Contato</h2>
+    <div class="contact-grid">
+        <div class="contact-info reveal">
+            <h3>Email</h3>
+            <p>contato@exemplo.com</p>
+        </div>
+        <div class="contact-info reveal">
+            <h3>Telefone</h3>
+            <p>+55 (11) 99999-9999</p>
+        </div>
+        <div class="contact-info reveal">
+            <h3>Localização</h3>
+            <p>São Paulo, SP</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <h2 class="section-title">Vamos trabalhar juntos?</h2>
+            <p>Estou disponível para novos projetos e oportunidades.</p>
+            <a href="mailto:contato@exemplo.com" class="cta-button">Agendar Reunião</a>
+            <div class="social-links">
+                <a href="#" class="social-link">GitHub</a>
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+<!-- Adicione este código modal antes do fechamento do body -->
+<div class="modal" id="agendarModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="section-title">Agendar Reunião</h2>
+        <form id="agendarForm">
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </div>
+            <button type="submit" class="cta-button">Enviar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
+
